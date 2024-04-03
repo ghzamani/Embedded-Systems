@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"temperature\startup_stm32f103x6.o"
+"temperature\main.o"
+"temperature\stm32f1xx_it.o"
+"temperature\stm32f1xx_hal_msp.o"
+"temperature\stm32f1xx_hal_gpio_ex.o"
+"temperature\stm32f1xx_hal_adc.o"
+"temperature\stm32f1xx_hal_adc_ex.o"
+"temperature\stm32f1xx_hal.o"
+"temperature\stm32f1xx_hal_rcc.o"
+"temperature\stm32f1xx_hal_rcc_ex.o"
+"temperature\stm32f1xx_hal_gpio.o"
+"temperature\stm32f1xx_hal_dma.o"
+"temperature\stm32f1xx_hal_cortex.o"
+"temperature\stm32f1xx_hal_pwr.o"
+"temperature\stm32f1xx_hal_flash.o"
+"temperature\stm32f1xx_hal_flash_ex.o"
+"temperature\stm32f1xx_hal_exti.o"
+"temperature\stm32f1xx_hal_tim.o"
+"temperature\stm32f1xx_hal_tim_ex.o"
+"temperature\stm32f1xx_hal_uart.o"
+"temperature\system_stm32f1xx.o"
+"temperature\character_lcd.o"
+--strict --scatter "Temperature\Temperature.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Temperature.map" -o Temperature\Temperature.axf
